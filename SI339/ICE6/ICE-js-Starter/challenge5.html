@@ -44,35 +44,19 @@
 	</style>
 
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
+
+
 
 	function upDate(i){
 		document.getElementById('image').style.backgroundImage="url('"+i.src+"')";
-		document.getElementById('image').innerHTML=i.alt;
+		document.getElementById('image').innerHTML= i.alt;
 	}
 
 	function unDo(i){
-
+		document.getElementById('image').style.backgroundImage="url()";
+		document.getElementById('image').innerHTML= "Hover over an image below."
 	}
-// 	function showAlt(){
-// var img = document.getElementsByTagName("img");
-// var image = document.getElementById("image");
 
-// for (var i = 0; i < img.length; i++) {
-//   img[i].addEventListener("mouseover", function() {
-//     var alt = this.alt;
-//     image.textContent = alt;
-//   });
-//   img[i].addEventListener("mouseleave", function() {
-//     image.textContent = '';
-//   });
-// }
-
-
-
-
-// }
 
 	</script>
 </head>
@@ -83,29 +67,13 @@
 			Hover over an image below.
 		</div>
 
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" 
-
-			onfocus = "upDate(this)"
-			onblue = "unDo()"
-			onmouseover = "upDate(this)"
-
-			
-			alt = "Styling with a Bandana" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
-
-			>
-
-
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->	
-		<img class = "preview" 
-			alt = "With My Boy" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
 	
-		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1" 
-			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
-			alt = "Young Puppy";>
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
+	
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseleave = "unDo()";>
+	
+
 </body>
 </html>
 	
