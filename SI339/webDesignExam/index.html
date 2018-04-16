@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>Web Design Exam</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+<script language=javascript type='text/javascript'> 
+function hideImage() { 
+if (document.getElementById) { 
+document.getElementById('hideimage').style.display = 'none'; 
+} 
+} 
+function showImage() { 
+if (document.getElementById) { 
+document.getElementById('hideimage').style.display = 'unset'; 
+} 
+} 
+</script> 
+
+</head>
+
+
+<body>
+
+<header>
+
+  <h1>James Roeser</h1>
+
+
+</header>
+
+
+ <div id= "pics">
+
+ <img src="./images/examPic.JPG" id="hideimage" class="half-page-image"> 
+ 
+ <img src="./images/UMSI-logo.jpg"  id="alwaysshow" class="half-page-image"> 
+</div>
+
+
+<br>
+
+<button onclick="javascript:hideImage()">Hide Image</button> 
+<button onclick="javascript:showImage()">Show Image</button>
+
+
+</body>
+</html>
+

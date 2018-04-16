@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<!--   <nav>
+      <br>
+      <a href="#home" ><img src="../static/localbeats.png" id="menu_logo" alt="logo" ></a>
+
+      <a href="#map">Map</a>
+      <a href="#search">Search</a>
+      <a href="/adduser">Add User</a>
+  
+     <br><br><br>
+     <hr/>
+     <p> Local Beats &copy; 2018 </p>
+
+  </nav>
+ -->
+
+</header>
+
+
+
+
+
+  <footer class="footer">
+    <hr/>
+    <p>This site was created by James Roeser &copy; 2018</p>
+  </footer>
+
+
+
+</body>
+</html>
+

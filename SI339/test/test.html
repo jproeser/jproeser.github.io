@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <title>Test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){ 
+      //Use the .attr method to get attributes
+      
+      // Use the .text method to update the content:
+      // selector.text(newValue)
+
+      // Use the .css method to update the content:
+      // selector.css(attribute, newValue)
+
+
+        $(".preview" ).on('focus mouseover',function() {
+          // 1) Take the alt text of the preview picture I just put into focus
+          // 2) Use this to set the text of the image
+        $("#image").text($(this).attr("alt"));
+        $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        })
+
+        $(".preview" ).on('blur mouseleave',function() {
+        $("#image").text("Hover over an image below");
+        $("#image").css('background-image', '');
+      })
+    });
+    </script>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      /*Hide the email field*/
+
+      $('#hidepic').hide();
+      $('#toggle').change(function(){
+          $('#hidepic').toggle();
+        });
+  });
+
+
+    </script>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<header>
+
+  <h1> hey there</h1>
+
+<!--   <nav>
+      <br>
+      <a href="#home" ><img src="../static/localbeats.png" id="menu_logo" alt="logo" ></a>
+
+      <a href="#map">Map</a>
+      <a href="#search">Search</a>
+      <a href="/adduser">Add User</a>
+  
+     <br><br><br>
+     <hr/>
+     <p> Local Beats &copy; 2018 </p>
+
+  </nav>
+ -->
+
+</header>
+
+
+      <div id="check">
+          <label>
+            <input type="checkbox" name="toggle" id="toggle">
+            Toggle hide/show picture.
+          </label>
+        </div>
+
+        <div id="hidepic">
+          <img src = "https://apod.nasa.gov/apod/image/1801/moonsetLasCampanas_beletsky.jpg" alt="space" height="50%" width="50%" >
+        </div>
+
+
+
+
+    <div id = "image">
+      Hover over an image below.
+    </div>
+    <div>
+    <img class = "preview" tabindex = "1" 
+      alt = "Styling with a Bandana" 
+      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";>
+  
+    <img class = "preview" tabindex = "1" 
+      alt = "With My Boy" 
+      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
+  
+    <img class = "preview" tabindex = "1" 
+      src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" 
+      alt = "Young Puppy";>
+
+</div>
+
+
+  <footer class="footer">
+    <hr/>
+    <p>This site was created by James Roeser &copy; 2018</p>
+  </footer>
+
+
+
+</body>
+</html>
+
